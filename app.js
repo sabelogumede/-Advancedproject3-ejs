@@ -7,15 +7,16 @@ const express = require('express'),
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
+
 // index route (when a user login - get their info from the db for display)
-app.get('/',(req,res)=>{
+app.get('/profile',(req,res)=>{
     let user = {
         name: 'Sabelo',
         img: 'https://t4.ftcdn.net/jpg/01/50/44/75/500_F_150447578_wEWVGCNzLoz1Dnxhs1bXuNmAy8XPsgcf.jpg'
         
         //, friends: ['Vusi','Patrice','Ellon','Thembi']
     }
-    res.render('index',{user: user})
+    res.render('profile',{user: user})
 
 }); //localhost:3000/
 

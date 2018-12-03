@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= user.name %></title>
+        <!-- style css -->
+        <link rel="stylesheet" href="/style.css">
+
+        <!-- external cdn -->
+        <link href="https://fonts.googleapis.com/css?family=open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="header-item header-item-one">Profile Template App</h1>
+            <span class="header-item">
+                <a href="/">Profile</a>
+            </span>
+        </div>
+
+        <h2 class="user-name"><%= user.name %></h2>
+        <!-- <img class="user-pic" src="../public/images/profile-picture.png" alt="user profile image"/> -->
+        <img class="user-pic" src="<%= user.img %>" alt="user profile image"/>
+
+        <div class="user-info">
+            <h3>User Info</h3>
+            <p>
+                Mea at adhuc tation salutatus, sed at noluisse phaedrum forensibus. 
+                Ad est legere populo expetendis, insolens disputando cu vim, graeco copiosae ne pri.
+                Mei quis necessitatibus in, eam dico simul dissentias an, id quo sint velit.
+                Ut ius unum simul, nam eius mazim ornatus no, mazim nostro tritani cu sit. 
+            </p>
+        </div>
+
+        <h3>Friends</h3>
+        <ul>
+            <li>Vusi</li>
+            <li>Patrice</li>
+            <li>Ellon</li>
+            <li>Thembi</li>
+        </ul>
+
+        <!-- script -->
+        <script src="/script.js"></script>
+
+    </body>
+</html>

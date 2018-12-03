@@ -12,6 +12,8 @@ app.get('/',(req,res)=>{
     let user = {
         name: 'Sabelo',
         img: 'https://t4.ftcdn.net/jpg/01/50/44/75/500_F_150447578_wEWVGCNzLoz1Dnxhs1bXuNmAy8XPsgcf.jpg'
+        
+        //, friends: ['Vusi','Patrice','Ellon','Thembi']
     }
     res.render('index',{user: user})
 

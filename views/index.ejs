@@ -32,14 +32,18 @@
         </div>
 
         <h3>Friends</h3>
-        <ul>
-            <li>Vusi</li>
-            <li>Patrice</li>
-            <li>Ellon</li>
-            <li>Thembi</li>
-        </ul>
+        <!-- check if user has friends -->
+        <% if(user.friends){ %>
+            <ul>
+                <% user.friends.forEach((friend)=>{ %>
+                    <li><%= friend %></li>
+                <% }) %>
+            </ul>
+        <% }else{ %>
+            <button>Find Friends</button>
+        <% } %>
 
-        <!-- script -->
+        <!-- script external file -->
         <script src="/script.js"></script>
 
     </body>
